@@ -1,94 +1,46 @@
 import React from 'react';
 import { Layout, Col, Row } from 'antd';
+import Movie from '../components/Movie';
 
 const { Content } = Layout;
 
 const Main = () => {
   return (
     <>
-      {/* <Content className='flex items-center justify-center'>
-      Content
-    </Content> */}
-      {/* <Content>
-        <Row gutter={[16, 16]}>
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-          
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col span={6}>
-            <div className='box1'>col</div>
-          </Col>
-        </Row>
-      </Content> */}
-
-      {/* <Content>
-        <Row gutter={[16, 16]}>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className='box1'>col</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className='box1'>col</div>
-          </Col>
-        </Row>
-      </Content> */}
-
-      <Row>
-        <Col xs={24} sm={{span: 22, offset: 1}} lg={{span: 20, offset: 2}} xl={{span: 18, offset: 3}}>
-          <Content>
+      <Content>
+        <Row>
+          <Col xs={24} sm={{span: 22, offset: 1}} lg={{span: 20, offset: 2}} xl={{span: 18, offset: 3}}>
             <Row gutter={[16, 16]}>
-              <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                <div className='box1'>col</div>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
               </Col>
-              <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                <div className='box1'>col</div>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
               </Col>
-              <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                <div className='box1'>col</div>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
               </Col>
-              <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                <div className='box1'>col</div>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
               </Col>
-              <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                <div className='box1'>col</div>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
               </Col>
-              <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-                <div className='box1'>col</div>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
+              </Col>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
+              </Col>
+              <Col xs={24} sm={12} md={8} lg={6}>
+                <Movie />
               </Col>
             </Row>
-          </Content>
-        </Col>
-      </Row>
-
-
+          </Col>
+        </Row>
+      </Content>
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

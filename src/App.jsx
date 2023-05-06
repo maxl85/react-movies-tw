@@ -7,13 +7,13 @@ import Main from './layout/Main';
 const App = () => {
   return (
     <>
-      <Layout className='h-screen'>
+      <Layout className='min-h-[100vh]'>
         <Header />
-        <Main />
+        <Main/>
         <Footer />
       </Layout>
     </>
   );
-}
+};
 
 export default App;
